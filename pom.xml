@@ -47,6 +47,16 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <version>1.8.1</version>
+
+                <configuration>
+                    <cargo.remote.username>admin</cargo.remote.username>
+                    <cargo.remote.password>admin</cargo.remote.password>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>

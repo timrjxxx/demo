@@ -27,8 +27,8 @@ pipeline{
         }
         stage('Deploy'){
              steps {
-
-                    deploy adapters: [tomcat9(path: '', url: 'http://localhost:8082/')], contextPath: null, war: 'target/demo-0.0.1-SNAPSHOT.war'
+                     deploy adapters: [tomcat9( url : 'http://localhost:8082/' ,  credentialsId: 'apache', path: ' ' )],contextPath : 'counterwebapp',
+                     war: 'target/*.war'
              }
         }
 
