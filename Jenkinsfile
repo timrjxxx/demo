@@ -30,8 +30,8 @@ pipeline{
 
 
 
-                     deploy adapters: [tomcat9( url : 'http://localhost:8082/' ,  credentialsId: 'apache', path: '/manager/text' )],
-                                    war: 'target/*.war'
+                     deploy adapters: [tomcat9( url : 'http://localhost:8082/' ,  credentialsId: 'tomcat', path: ' ' )],
+                     war: 'target/*.war'
              }
         }
 
