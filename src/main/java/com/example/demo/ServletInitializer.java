@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import jakarta.servlet.annotation.WebServlet;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
